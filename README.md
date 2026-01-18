@@ -1,0 +1,2 @@
+# ZapretSetup
+Zapret-Vpn setup

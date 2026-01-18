@@ -1,0 +1,89 @@
+{
+  "app_metadata": {
+    "version": "4.2.1-stable",
+    "build_date": "2026-01-15",
+    "update_channel": "production",
+    "license": {
+      "type": "Premium Plus",
+      "key": "type",
+      "expires_at": "2027-01-01T00:00:00Z"
+    }
+  },
+  "network_core": {
+    "protocol_stack": {
+      "provider": "WireGuard",
+      "mtu": 1420,
+      "udp_port": 51820,
+      "handshake_interval": 20,
+      "cipher_suite": "ChaCha20-Poly1305"
+    },
+    "routing": {
+      "ipv6_enabled": false,
+      "kill_switch": {
+        "enabled": true,
+        "mode": "strict",
+        "exceptions": ["192.168.1.0/24"]
+      },
+      "dns": {
+        "primary": "1.1.1.1",
+        "secondary": "8.8.8.8",
+        "custom_dns_over_https": "https://dns.cloudflare.com"
+      }
+    }
+  },
+  "active_session": {
+    "node_id": "DE-FRA-099",
+    "connection_details": {
+      "gateway": "frankfurt-cluster-v4",
+      "ip": "192.168.0.115",
+      "local_address": "10.0.0.2/32",
+      "uptime_limit": 86400
+    },
+    "traffic_stats": {
+      "bytes_sent": 1048576,
+      "bytes_received": 5242880,
+      "compression_ratio": 1.2
+    }
+  },
+  "available_clusters": [
+    {
+      "region": "Europe",
+      "nodes": [
+        {"city": "Berlin", "ip": "185.22.33.1"},
+        {"city": "Paris", "ip": "92.45.11.22"}
+      ]
+    },
+    {
+      "region": "North America",
+      "nodes": [
+        {"city": "New York", "ip": "45.66.77.88"}
+      ]
+    }
+  ],
+  "proxy_settings": {
+    "use_proxy": false,
+    "type": "SOCKS5",
+    "host": "127.0.0.1",
+    "port": 9050,
+    "auth": {
+      "required": false,
+      "user": "",
+      "pass": ""
+    }
+  },
+  "ui_preferences": {
+    "theme": "dark",
+    "language": "ru_RU",
+    "notifications": {
+      "on_connect": true,
+      "on_disconnect": true,
+      "sound_alerts": false
+    },
+    "minimize_to_tray": true
+  },
+  "advanced_debugging": {
+    "log_level": "TRACE",
+    "dump_path": "./logs/dumps/",
+    "remote_logging": false
+  }
+}
