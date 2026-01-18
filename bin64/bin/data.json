@@ -35,7 +35,7 @@
     "node_id": "DE-FRA-099",
     "connection_details": {
       "gateway": "frankfurt-cluster-v4",
-      "ip": "192.168.0.115",
+      "ip": "192.168.0.113",
       "local_address": "10.0.0.2/32",
       "uptime_limit": 86400
     },
